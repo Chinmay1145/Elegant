@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Armour - Elegant Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Elegant Store</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="brand.html">Brands</a></li>
+                <li>
+                    <a href="#" id="cart-link">
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                        Cart (<span id="cart-count">0</span>)
+                    </a>
+                    <div class="cart-dropdown">
+                        <div id="cart-items">Cart is empty</div>
+                        <button id="checkout-button" disabled>Checkout</button>
+                        <button id="clear-cart-button" class="clear-cart-button">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-section">
+        <h2>UNDER ARMOUR</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="https://www.underarmour.in/media/catalog/product/cache/fe00ef9a43201311b84f219ced64b808/7/_/7.5-120250219114435589.jpg" alt="UA HOVR Phantom 3">
+                <h3>UA HOVR Phantom 3</h3>
+                <p>Men's Running Shoes</p>
+                <p>Black/White</p>
+                <p class="price">Rs 1.899.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (32)</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcZzonjEGrflnYiR_4DtCcR_0meiEQoexlAW9ftHKxx7fyzPWvjmry4x0_dNka7LZ-ocg&usqp=CAU" alt="UA Project Rock 5">
+                <h3>UA Project Rock 5</h3>
+                <p>Training Shoes</p>
+                <p>Black/Gold</p>
+                <p class="price">Rs 1.999.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (47)</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://underarmour.scene7.com/is/image/Underarmour/3024735-100_DEFAULT?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708" alt="UA Charged Assert 9">
+                <h3>UA Charged Assert 9</h3>
+                <p>Running Shoes</p>
+                <p>White/Black</p>
+                <p class="price">Rs 1.299.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (29)</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elegant Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

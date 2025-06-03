@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asics - Elegant Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Elegant Store</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="brand.html">Brands</a></li>
+                <li>
+                    <a href="#" id="cart-link">
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                        Cart (<span id="cart-count">0</span>)
+                    </a>
+                    <div class="cart-dropdown">
+                        <div id="cart-items">Cart is empty</div>
+                        <button id="checkout-button" disabled>Checkout</button>
+                        <button id="clear-cart-button" class="clear-cart-button">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-section">
+        <h2>ASICS</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ98sunf6FB0h3hoES54R_M71Ava0n-7Jyma-YkpkWj2hxe2zY266oCO_cD6VIUWbxEAmQ&usqp=CAU" alt="Asics Gel-Nimbus">
+                <h3>Asics Gel-Nimbus 25</h3>
+                <p>Men's Running Shoes</p>
+                <p>Black/White</p>
+                <p class="price">Rs 1.899.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (42)</p>
+                <button class="add-to-cart-btn" 
+                    data-id="asics1" 
+                    data-name="Asics Gel-Nimbus 25" 
+                    data-price="1899000"
+                    data-description="Men's Running Shoes - Black/White">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTEhMVFhUVFRcVFxgYFhcYFxcWFRcWFxUVFRYaHyggGholHxgVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg8NDy0ZFRkrKysrKzcrNy0rNysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAgEDBAUIBwb/xABCEAABAgMEBwUGBQIDCQAAAAABAAIDESEEEjFRBQZBYXGBkQcTobHwFCIywdHhQlJigpJEcnOi0hYjMzRUssLi8f/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A9xREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBEWFb9LWeAQI0aFDJwD3taTwBNUGaihCitcA5pDmnAggg8CFNAREQEREBW7RHbDaXvcGtaJucTIADaSri8Z7dNZTfh2KG6jQIsWR2n/htPATdLe1BudJdsEBkYNhQnRIQo587pO9jSMOMpr0HRWkYdphMjQXXmPEwfMEbCMCFyhY4bYj5PddBBrOVRgKheo6o6xmxMYyGW93OTmuPxGRJcXSoaUNNk8JIPakXzur2ulkthuw4l2JM+4/3XGRNWbHDbSssQF9EgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIPlO0PXBujoF4AOjRJthNOE9r3bhSm2i5z0xpaJaYzo8ZxdFfIkkyw2AYAAYBbrtL1hNst0V4J7thMKHI/gaZXuBILua+TD9/wApHwQfSava22mxkGBFc1s5lmLDnNhovfNQ9coekYRoGRocu8ZPPB7c2mvA0XL4dLh5cF9Dqjp59itMO0Mmbpk5oPxwzR7D8t4BQdUIsbR1uZHhMiwnBzHtDmncfI7lkoCIiDD0vpFlmgRY8QyZCY57uDROQ3nDmuUNL6QfaY8WPEPvRHl7t0z8I3AUG4Be19uen4bLK2yNeO8ivY57QaiEybgTLCbxDxxkV4M0hxqZN6A7p7EF+zC8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" alt="Asics GT-2000">
+                <h3>Asics GT-2000 11</h3>
+                <p>Women's Running Shoes</p>
+                <p>Black/Grey</p>
+                <p class="price">Rs 1.599.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (35)</p>
+                <button class="add-to-cart-btn" 
+                    data-id="asics2" 
+                    data-name="Asics GT-2000 11" 
+                    data-price="1599000"
+                    data-description="Women's Running Shoes - Black/Grey">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://www.asics.co.in/media/catalog/product/1/2/1203a305_024_sr_rt_glb-base.jpg?optimize=high&bg-color=255%2C255%2C255&fit=cover&height=375&width=500&auto=webp&format=pjpg" alt="Asics Gel-Kayano">
+                <h3>Asics Gel-Kayano 29</h3>
+                <p>Men's Running Shoes</p>
+                <p>White/Blue</p>
+                <p class="price">Rs 1.799.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (38)</p>
+                <button class="add-to-cart-btn" 
+                    data-id="asics3" 
+                    data-name="Asics Gel-Kayano 29" 
+                    data-price="1799000"
+                    data-description="Men's Running Shoes - White/Blue">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elegant Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Elegant Store</title>
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <div class="payment-wrapper">
+        <div class="payment-container">
+            <div class="payment-header">
+                <h1>Payment Details</h1>
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="amount-details">
+                        <p>Invoice Number: <span id="invoiceNumber"></span></p>
+                        <p>Total Amount: <span id="totalAmount"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-methods">
+                <h2>Select Payment Method</h2>
+                <div class="method-selector">
+                    <button class="method-btn active" data-method="card">Credit Card</button>
+                    <button class="method-btn" data-method="bank">Bank Transfer</button>
+                </div>
+            </div>
+
+            <form id="paymentForm" class="payment-form">
+                <div class="card-details">
+                    <div class="form-group">
+                        <label>Card Number</label>
+                        <input type="text" id="cardNumber" maxlength="16" placeholder="1234 5678 9012 3456">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Expiry Date</label>
+                            <input type="text" id="expiryDate" placeholder="MM/YY">
+                        </div>
+                        <div class="form-group">
+                            <label>CVV</label>
+                            <input type="password" id="cvv" maxlength="3" placeholder="123">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Cardholder Name</label>
+                        <input type="text" id="cardholderName" placeholder="Name on card">
+                    </div>
+                </div>
+
+                <div class="bank-details" style="display: none;">
+                    <div class="bank-info">
+                        <h3>Bank Transfer Details</h3>
+                        <p>Bank: Example Bank</p>
+                        <p>Account: 1234567890</p>
+                        <p>SWIFT: EXAMPLEBK</p>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-payment">Complete Payment</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/payment.js"></script>
+</body>
+</html>

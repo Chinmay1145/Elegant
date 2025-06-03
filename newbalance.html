@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Balance - Elegant Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Elegant Store</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="brand.html">Brands</a></li>
+                <li>
+                    <a href="#" id="cart-link">
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                        Cart (<span id="cart-count">0</span>)
+                    </a>
+                    <div class="cart-dropdown">
+                        <div id="cart-items">Cart is empty</div>
+                        <button id="checkout-button" disabled>Checkout</button>
+                        <button id="clear-cart-button" class="clear-cart-button">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-section">
+        <h2>NEW BALANCE</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="https://nb.scene7.com/is/image/NB/ml574evg_nb_02_i?$pdpflexf2$" alt="New Balance 574">
+                <h3>New Balance 574</h3>
+                <p>Classic Grey</p>
+                <p class="price">Rs 1.399.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (42)</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://nb.scene7.com/is/image/NB/m990gl5_nb_02_i?$pdpflexf2$" alt="New Balance 990v5">
+                <h3>New Balance 990v5</h3>
+                <p>Grey/Castlerock</p>
+                <p class="price">Rs 2.199.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (38)</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="data:image/jpeg;base64,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" alt="New Balance 550">
+                <h3>New Balance 550</h3>
+                <p>White/Navy</p>
+                <p class="price">Rs 1.699.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (45)</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elegant Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

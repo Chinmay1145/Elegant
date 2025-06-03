@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUMA - Elegant Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Elegant Store</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="brand.html">Brands</a></li>
+                <li>
+                    <a href="#" id="cart-link">
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                        Cart (<span id="cart-count">0</span>)
+                    </a>
+                    <div class="cart-dropdown">
+                        <div id="cart-items">Cart is empty</div>
+                        <button id="checkout-button" disabled>Checkout</button>
+                        <button id="clear-cart-button" class="clear-cart-button">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-section">
+        <h2>PUMA</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/374915/01/sv01/fnd/IND/fmt/png" alt="Puma Suede">
+                <h3>Puma Suede Classic XXI</h3>
+                <p>Unisex</p>
+                <p>Black/White</p>
+                <p class="price">Rs 999.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (31)</p>
+                <button class="add-to-cart-btn" data-id="puma1" data-name="Puma Suede Classic XXI" data-price="999000">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/368845/01/sv01/fnd/IND/fmt/png" alt="Puma RS-X">
+                <h3>Puma RS-X³ Puzzle</h3>
+                <p>Men</p>
+                <p>Puma White-Puma Black</p>
+                <p class="price">Rs 1.299.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (25)</p>
+                <button class="add-to-cart-btn" data-id="puma2" data-name="Puma RS-X³ Puzzle" data-price="1299000">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/375212/01/sv01/fnd/IND/fmt/png" alt="Puma Cali">
+                <h3>Puma Cali Sport</h3>
+                <p>Women</p>
+                <p>White-Black</p>
+                <p class="price">Rs 1.199.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (33)</p>
+                <button class="add-to-cart-btn" data-id="puma3" data-name="Puma Cali Sport" data-price="1199000">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/381983/02/sv01/fnd/IND/fmt/png" alt="Puma Mayze">
+                <h3>Puma Mayze Classic</h3>
+                <p>Women</p>
+                <p>Puma White</p>
+                <p class="price">Rs 1.399.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (27)</p>
+                <button class="add-to-cart-btn" data-id="puma4" data-name="Puma Mayze Classic" data-price="1399000">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elegant Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

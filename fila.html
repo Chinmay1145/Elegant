@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila - Elegant Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Elegant Store</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="brand.html">Brands</a></li>
+                <li>
+                    <a href="#" id="cart-link">
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                        Cart (<span id="cart-count">0</span>)
+                    </a>
+                    <div class="cart-dropdown">
+                        <div id="cart-items">Cart is empty</div>
+                        <button id="checkout-button" disabled>Checkout</button>
+                        <button id="clear-cart-button" class="clear-cart-button">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-section">
+        <h2>FILA</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3elb1fJ5KFRxBJEiBm9VnCtJWx19eo6Nf4w&s" alt="Fila Disruptor">
+                <h3>Fila Disruptor II</h3>
+                <p>Women's Lifestyle Shoes</p>
+                <p>White</p>
+                <p class="price">Rs 1.299.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (48)</p>
+                <button class="add-to-cart-btn" data-id="fila1" data-name="Fila Disruptor II" data-price="1299000">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuQ2pnKaQ6u9EjDCpBDwaOOwMF-pHAsHSuBg&s" alt="Fila Ray Tracer">
+                <h3>Fila Ray Tracer</h3>
+                <p>Men's Sneakers</p>
+                <p>Black/White</p>
+                <p class="price">Rs 1.199.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (32)</p>
+                <button class="add-to-cart-btn" data-id="fila2" data-name="Fila Ray Tracer" data-price="1199000">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUQc-Z6xOVHmuhRvUO_Ic9EDUHaoDRICCwvw&s" alt="Fila Grant Hill">
+                <h3>Fila Grant Hill 2</h3>
+                <p>Men's Basketball Shoes</p>
+                <p>White/Navy</p>
+                <p class="price">Rs 1.499.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (28)</p>
+                <button class="add-to-cart-btn" data-id="fila3" data-name="Fila Grant Hill 2" data-price="1499000">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elegant Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converse - Elegant Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Elegant Store</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="brand.html">Brands</a></li>
+                <li>
+                    <a href="#" id="cart-link">
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                        Cart (<span id="cart-count">0</span>)
+                    </a>
+                    <div class="cart-dropdown">
+                        <div id="cart-items">Cart is empty</div>
+                        <button id="checkout-button" disabled>Checkout</button>
+                        <button id="clear-cart-button" class="clear-cart-button">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-section">
+        <h2>CONVERSE</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw9bc7ca7a/images/a_107/M9166_A_107X1.jpg" alt="Chuck Taylor All Star">
+                <h3>Chuck Taylor All Star</h3>
+                <p>Classic Black</p>
+                <p class="price">Rs 899.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (56)</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwf8f3f5b5/images/a_107/M7652_A_107X1.jpg" alt="Chuck 70 High Top">
+                <h3>Chuck 70 High Top</h3>
+                <p>Parchment</p>
+                <p class="price">Rs 1.099.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (48)</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw8b583b39/images/a_107/170555C_A_107X1.jpg" alt="One Star Pro">
+                <h3>One Star Pro</h3>
+                <p>White/Black</p>
+                <p class="price">Rs 999.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (35)</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elegant Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

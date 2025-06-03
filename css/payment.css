@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.payment-wrapper {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.payment-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.payment-header h1 {
+    color: #1E1E1E;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.order-summary {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.amount-details {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.payment-methods {
+    margin-bottom: 30px;
+}
+
+.method-selector {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.method-btn {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #1E1E1E;
+    background: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.method-btn.active {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #1E1E1E;
+    outline: none;
+}
+
+.bank-info {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.bank-info h3 {
+    margin-bottom: 15px;
+}
+
+.submit-payment {
+    width: 100%;
+    padding: 15px;
+    background-color: #1E1E1E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-payment:hover {
+    background-color: #444;
+}

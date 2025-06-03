@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reebok - Elegant Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Elegant Store</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="brand.html">Brands</a></li>
+                <li>
+                    <a href="#" id="cart-link">
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                        Cart (<span id="cart-count">0</span>)
+                    </a>
+                    <div class="cart-dropdown">
+                        <div id="cart-items">Cart is empty</div>
+                        <button id="checkout-button" disabled>Checkout</button>
+                        <button id="clear-cart-button" class="clear-cart-button">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-section">
+        <h2>REEBOK</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="data:image/jpeg;base64,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" alt="Reebok Classic Leather">
+                <h3>Reebok Classic Leather</h3>
+                <p>White</p>
+                <p class="price">Rs 1.199.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (39)</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaxBKbAUSmneFuiMPX0_CScJSyftakIMP1xQ&s" alt="Reebok Club C 85">
+                <h3>Reebok Club C 85</h3>
+                <p>Chalk/Green</p>
+                <p class="price">Rs 1.299.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (43)</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17GUCvxOS6ngaIsr2XEQcGoxv2ho5Y6QESA&s" alt="Reebok Question Mid">
+                <h3>Reebok Question Mid</h3>
+                <p>White/Red</p>
+                <p class="price">Rs 1.899.000</p>
+                <p>⭐️⭐️⭐️⭐️⭐️ (37)</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elegant Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

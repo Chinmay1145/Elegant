@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Official Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Elegant Store</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="brand.html">Brands</a></li>
+                <li>
+                    <a href="#" id="cart-link">
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                        Cart (<span id="cart-count">0</span>)
+                    </a>
+                    <div class="cart-dropdown">
+                        <div id="cart-items">Cart is empty</div>
+                        <button id="checkout-button" disabled>Checkout</button>
+                        <button id="clear-cart-button" class="clear-cart-button">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </li>
+                <li><button id="logout-button" class="logout-button">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="advertisement-banner">
+        <img src="https://1565619539.rsc.cdn77.org/temp/1718358019_23a07bcda501d75612f6186d0eb9d486.jpg" alt="Diskon 50% untuk Semua Produk!">
+    </div>
+    
+    <div class="hero">
+        <h1>Welcome to the Elegant Shoe Store</h1>
+        <p>Here you get Branded Shoes in ranged amount !</p>
+        <a href="brand.html">
+            <button class="shop-now">Go to the Brands</button>
+        </a>
+    </div>
+
+    <section class="product-section">
+        <h2>Best Seller</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0c8566eb-3260-4890-8944-1c65eb22de46/AIR+FORCE+1+%28GS%29.png" alt="Nike Air Force 1">
+                <h3>Nike Air Force 1'07</h3>
+                <p>Price: Rs 1.729.000</p>
+                <button class="add-to-cart" data-id="nike1" data-name="Nike Air Force 1'07" data-price="1729000">Easy to Wear and looks good</button>
+            </div>
+            <div class="product-item">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/eaf524f7-a9f7-4f70-a438-1b0480eb2540/NIKE+COURT+VISION+LO.png" alt="Nike Court Vision Low">
+                <h3>Nike Court Vision Low</h3>
+                <p>Price: Rs 1.069.000</p>
+                <button class="add-to-cart" data-id="nike2" data-name="Nike Court Vision Low" data-price="1069000">Easy to Wear and looks good</button>
+            </div>
+            <div class="product-item">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0f76f73e-2578-4d62-abab-c5563ea4f78c/NIKE+DUNK+LOW+RETRO.png" alt="Nike Dunk Low Retro">
+                <h3>Nike Dunk Low Retro</h3>
+                <p>Price: Rs 1.549.000</p>
+                <button class="add-to-cart" data-id="nike3" data-name="Nike Dunk Low Retro" data-price="1549000">Easy to Wear and looks good</button>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/09c5ea6df1bd4be6baaaac5e003e7047_9366/Forum_Low_Shoes_White_FY7756_01_standard.jpg" alt="Adidas Forum Low">
+                <h3>Adidas Forum Low</h3>
+                <p>Price: Rs 1.499.000</p>
+                <button class="add-to-cart" data-id="adidas1" data-name="Adidas Forum Low" data-price="1499000">Easy to Wear and looks good</button>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7ed0855435194229a525aad6009a0497_9366/Superstar_Shoes_White_EG4958_01_standard.jpg" alt="Adidas Superstar">
+                <h3>Adidas Superstar</h3>
+                <p>Price: Rs 1.599.000</p>
+                <button class="add-to-cart" data-id="adidas2" data-name="Adidas Superstar" data-price="1599000">Easy to Wear and looks good</button>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/68ae7ea7849b43eca70aac1e00f5146d_9366/Stan_Smith_Shoes_White_FX5502_01_standard.jpg" alt="Adidas Stan Smith">
+                <h3>Adidas Stan Smith</h3>
+                <p>Price: Rs 1.399.000</p>
+                <button class="add-to-cart" data-id="adidas3" data-name="Adidas Stan Smith" data-price="1399000">Easy to Wear and looks good</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elegant Store</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        let cartItems = [];
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const product = {
+                    id: button.dataset.id,
+                    name: button.dataset.name,
+                    price: parseInt(button.dataset.price),
+                    quantity: 1
+                };
+                
+                addToCart(product);
+                updateCartDisplay();
+            });
+        });
+    </script>
+</body>
+</html>

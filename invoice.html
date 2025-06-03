@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - Elegant Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="invoice-wrapper">
+        <div class="invoice-container">
+            <div class="invoice-header">
+                <div class="logo">
+                    <h1>Elegant Store</h1>
+                </div>
+                <div class="invoice-info">
+                    <h2>Invoice</h2>
+                    <p>Invoice #: <span id="invoiceNumber"></span></p>
+                    <p>Date: <span id="invoiceDate"></span></p>
+                </div>
+            </div>
+
+            <div class="invoice-details">
+                <div class="customer-details">
+                    <h3>Bill To:</h3>
+                    <div id="customerInfo"></div>
+                </div>
+                <div class="shipping-details">
+                    <h3>Ship To:</h3>
+                    <div id="shippingInfo"></div>
+                </div>
+            </div>
+
+            <div class="order-details">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orderItems"></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Subtotal</td>
+                            <td id="subtotal"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Tax (10%)</td>
+                            <td id="tax"></td>
+                        </tr>
+                        <tr class="total">
+                            <td colspan="2">Total</td>
+                            <td id="total"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="invoice-actions">
+                <button id="printInvoice" class="print-button">Print Invoice</button>
+                <button id="proceedToPayment" class="proceed-button">Proceed to Payment</button>
+            </div>
+        </div>
+    </div>
+    <script src="invoice.js"></script>
+</body>
+</html>
